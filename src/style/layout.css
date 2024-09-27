@@ -13,6 +13,13 @@
 
 body {
     font-family: var(--main-font);
+    --dot-bg: white;
+    --dot-color: black;
+    --dot-size: 1px;
+    --dot-space: 22px;
+	background: linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		        var(--dot-color);
 }
 
 #card {
@@ -20,6 +27,8 @@ body {
     padding: 37px 0;
     border-radius: 20px;
     font-family: 'Work Sans', sans-serif;
+    background-color: var(--dot-bg);
+    border: 1px solid var(--dot-color);
 }
 
 .header {
@@ -35,6 +44,8 @@ body {
 
 .header__title {
     margin: 20px 0 7px;
+    font-family: 'Technor', sans-serif;
+    font-size: 28px
 }
 
 .social {
